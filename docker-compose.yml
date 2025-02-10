@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  appl_project:
+    build: .
+    container_name: appl_project
+    volumes:
+      - .:/app
+    command: ["python", "appl_project/sync_data.py"]

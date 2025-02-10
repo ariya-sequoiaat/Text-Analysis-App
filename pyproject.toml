@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "appl-project"
+version = "0.1.0"
+description = "Word Replacement & Text Analysis Project"
+authors = ["Dr. Ariya S S <ariya-sequoiaat.com>"]
+packages = [{include = "appl_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.31.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
